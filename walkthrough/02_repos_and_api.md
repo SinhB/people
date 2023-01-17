@@ -1,6 +1,6 @@
 # Repository
 
-Je decide de partir sur une architecture hexagonale et je commence donc à construire un repository, celui-ci se nommera `PeopleRepository` et aura des méthodes permettant à la réalisation des usent cases, c'est un peu straightforward, je pourrais écrire des méthodes plus génériques et passer par la gestion des usent cases entre les couches interfacent et domaine.
+Je decide de partir sur une architecture hexagonale et je commence donc à construire un repository, celui-ci se nommera `PeopleRepository` et aura des méthodes permettant à la réalisation des use cases, c'est un peu straightforward, je pourrais écrire des méthodes plus génériques et passer par la gestion des use cases entre les couches interfacent et domaine.
 
 Un seul repository suffit pour l'instant, j'en profite pour implementer directement la version SQLite de ce repository en passant par `SQLAlchemy`.
 Ce n'est pas très TDD tout ça ... mais je finis d'implementer les méthodes et j'ai maintenant envie d'implementer mon premier endpoint et tester le workflow entier.
@@ -17,7 +17,7 @@ Finalement je perds pas mal de temps sur le naming et les routes de mes endpoint
 
 Le fonctionnement des endpoints est assez précis et je pourrais en écrire des assez génériques avec des filtres/paramètres qui répondront au besoin, je decide quand même de me restreindre au fonctionnement attendu, chaque endpoint ne fera donc qu'une chose.
 
-Je mens un peu car celui pour la répartition des genres par pays accepte un query en paramètres (`country`) qui permettent de faire un filtre sur le pays sélectionné.
+Je mens un peu car celui pour la répartition des genres par pays accepte un query en paramètres (`country`) qui permet de faire un filtre sur le pays sélectionné.
 
 ```
 @router.get("/people/gender/")
