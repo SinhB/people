@@ -42,4 +42,4 @@ This is not a production code. The purpose of this code is to test hexagonal arc
 
 ### Walkthrough
 
-You can found my notebook here
+You can found my notebook [here](/walkthrough)
